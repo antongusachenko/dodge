@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    display :flex;
+    padding: 0 20px;
+    
+}
+body {
+   
+  margin: 0;
+  background: #000000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+
+
+.spoiler h3{
+    opacity: 0;
+    font-size: 28px;
+      
+}
+.spoiler.active{
+    flex:10;
+}
+.spoiler.active h3 {
+    opacity : 1;
+    transition: opacity 0.3s ease-in;
+    position: absolute;
+    margin: 0 ;
+    bottom: 90px;
+    color: rgb(179, 56, 56);
+    
+    
+    
+}
+
+.spoiler{
+    height: 80vh;
+    margin:10px;
+    border-radius: 20px;
+    box-shadow: 0 0px 15px #cd4328;
+    
+    cursor :pointer ;
+    flex:0,1 ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
